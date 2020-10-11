@@ -1,9 +1,9 @@
 node('master') {
     stage("Fetch Source Code") {
-        git 'https://github.com/VMWare-Training-Oct2020/VMWare-Devops-Training-Oct2020.git'
+        git 'https://github.com/VMWare-Training-Oct2020/Multibranch-Pipeline.git'
     }
     
-    dir('Jenkins/3. Multi-Branch and Declarative Pipelines') {
+    dir('') {
         printMessage('Running Pipeline')
         stage("Testing") {
             sh 'python test_functions.py'
